@@ -1,0 +1,20 @@
+<svg width="304" height="304" xmlns="http://www.w3.org/2000/svg" style="vector-effect: non-scaling-stroke;" stroke="null">
+
+ <g stroke="null">
+  <rect stroke-width="5" stroke="#000" id="svg_1" height="100" width="100" y="2.5" x="2.5" fill="#fff"/>
+  <rect stroke="#000" id="svg_2" height="0" width="1" y="342" x="561" fill="#fff"/>
+  <rect stroke-width="5" stroke="#000" id="svg_3" height="100" width="100" y="2.5" x="102.5" fill="#fff"/>
+  <rect stroke-width="5" stroke="#000" id="svg_4" height="100" width="100" y="2.5" x="201.5" fill="#fff"/>
+  <rect stroke-width="5" stroke="#000" id="svg_5" height="100" width="100" y="102.5" x="2.5" fill="#fff"/>
+  <rect stroke="#000" id="svg_6" height="0" width="1" y="442" x="562" fill="#fff"/>
+  <rect stroke-width="5" stroke="#000" id="svg_7" height="100" width="100" y="102.5" x="102.5" fill="#fff"/>
+  <rect stroke-width="5" stroke="#000" id="svg_8" height="100" width="100" y="102.5" x="201.5" fill="#fff"/>
+  <rect stroke-width="5" stroke="#000" id="svg_9" height="100" width="100" y="202.5" x="2.5" fill="#fff"/>
+  <rect stroke="#000" id="svg_10" height="0" width="1" y="558" x="561" fill="#fff"/>
+  <rect stroke-width="5" stroke="#000" id="svg_11" height="100" width="100" y="202.5" x="102.5" fill="#fff"/>
+  <rect stroke-width="5" stroke="#000" id="svg_12" height="100" width="100" y="202.5" x="201.5" fill="#fff"/>
+  <ellipse ry="29.66666" rx="29.66666" id="svg_20" cy="252.33326" cx="152.33328" stroke-width="0" stroke="#000" fill="#ff54ed"/>
+  <path id="svg_25" d="m291.11295,54.43574l-26.10764,-15.85679c-6.58704,-4.0003 -15.2641,-2.07601 -19.41504,4.29054l-10.28882,15.83547l49.94116,30.31959l10.2937,-15.82199c4.13547,-6.37968 2.16284,-14.78045 -4.42337,-18.76682l0,0zm-144.68436,141.05182l49.94525,30.31964l81.4021,-125.26476l-49.97418,-30.33321l-81.37317,125.27832l0,0zm-7.63184,38.52704l-1.09863,28.47758l26.06027,-13.33183l24.22687,-12.35938l-48.18265,-29.27127l-1.00586,26.48489l0,0l0,0z" stroke-width="5" stroke="#000" fill="#7085ff"/>
+  <ellipse ry="29.66666" rx="29.66666" id="svg_26" cy="54.33329" cx="52.99996" stroke-width="0" stroke="#000" fill="#ff54ed"/>
+ </g>
+</svg>
