@@ -1,16 +1,18 @@
-import "./App.css";
-import icon from "/icon.svg";
-
 function App() {
+  const numbers = [];
+
+  for (let i = 1; i <= 90; i += 1) {
+    numbers.push(i);
+  }
+
   return (
-    <>
-      <div>
-        <a href="#" target="_blank">
-          <img src={icon} className="logo" alt="" />
-        </a>
+    <div className="bingo-machine">
+      <div className="bingo-board">
+        {numbers.map((i) => (
+          <div className="bingo-board-cell">{i}</div>
+        ))}
       </div>
-      <h1>Bingo Machine</h1>
-    </>
+    </div>
   );
 }
 

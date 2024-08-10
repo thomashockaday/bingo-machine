@@ -1,12 +1,13 @@
 :root {
+  --primary: #ffffff;
+  --secondary: #2f3542;
+
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
+  color: var(--primary);
+  background-color: var(--secondary);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -14,21 +15,34 @@
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  margin: 1em 2%;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.bingo-board {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  width: 80%;
+  border: 1px solid var(--primary);
+}
+
+.bingo-board-cell {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 1em 2%;
+  border: 1px solid var(--primary);
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: var(--secondary);
+    background-color: var(--primary);
+  }
+
+  .bingo-board {
+    border-color: var(--secondary);
+  }
+
+  .bingo-board-cell {
+    border-color: var(--secondary);
   }
 }
