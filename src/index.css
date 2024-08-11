@@ -21,11 +21,19 @@ body {
   font-size: 1.2rem;
 }
 
+h1 {
+  margin: 0;
+}
+
 button {
   padding: 1em 2%;
   background-color: var(--highlight);
   border: none;
   font-size: inherit;
+  display: block;
+  width: 100%;
+  margin: 1em 0;
+  font-weight: bold;
 }
 
 button:hover,
@@ -34,8 +42,9 @@ button:focus {
   background-color: var(--highlight-active);
 }
 
-button:focus {
-  border: 2px solid var(--highlight-active);
+.bingo-caller {
+  display: flex;
+  gap: 2%;
 }
 
 .bingo-board {
@@ -53,6 +62,10 @@ button:focus {
 
 .bingo-board-cell--called {
   background-color: var(--highlight);
+}
+
+.bingo-controls {
+  width: 20%;
 }
 
 @media (prefers-color-scheme: light) {

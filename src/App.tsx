@@ -25,21 +25,27 @@ function App() {
 
   return (
     <div className="bingo-machine">
-      <div className="bingo-board">
-        {numbers.map((i) => (
-          <div
-            className={`bingo-board-cell ${
-              calledNumbers.includes(i) ? "bingo-board-cell--called" : ""
-            }`}
-            key={i}
-          >
-            {i}
-          </div>
-        ))}
-      </div>
+      <div className="bingo-caller">
+        <div className="bingo-board">
+          {numbers.map((i) => (
+            <div
+              className={`bingo-board-cell ${
+                calledNumbers.includes(i) ? "bingo-board-cell--called" : ""
+              }`}
+              key={i}
+            >
+              {i}
+            </div>
+          ))}
+        </div>
 
-      <button onClick={callNextNumber}>Call</button>
-      <button onClick={reset}>Reset</button>
+        <div className="bingo-controls">
+          <h1>Bingo</h1>
+
+          <button onClick={callNextNumber}>Call</button>
+          <button onClick={reset}>Reset</button>
+        </div>
+      </div>
     </div>
   );
 }
