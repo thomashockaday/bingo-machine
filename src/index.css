@@ -1,8 +1,10 @@
 :root {
   --primary: #ffffff;
-  --secondary: #2f3542;
-  --highlight: #ff6b81;
-  --highlight-active: #ff4757;
+  --primary-highlight: #c8d6e5;
+  --secondary: #222f3e;
+  --secondary-highlight: #1e272e;
+  --tertiary: #ff6b81;
+  --tertiary-highlight: #ff4757;
 
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -25,9 +27,13 @@ h1 {
   margin: 0;
 }
 
+h2 {
+  font-size: 1.2rem;
+}
+
 button {
   padding: 1em 2%;
-  background-color: var(--highlight);
+  background-color: var(--tertiary);
   border: none;
   font-size: inherit;
   display: block;
@@ -39,7 +45,7 @@ button {
 button:hover,
 button:active,
 button:focus {
-  background-color: var(--highlight-active);
+  background-color: var(--tertiary-highlight);
 }
 
 .bingo-caller {
@@ -61,11 +67,18 @@ button:focus {
 }
 
 .bingo-board-cell--called {
-  background-color: var(--highlight);
+  background-color: var(--tertiary);
 }
 
 .bingo-controls {
   width: 20%;
+}
+
+.number-display {
+  background-color: var(--secondary-highlight);
+  text-align: center;
+  font-size: 2rem;
+  padding: 0.4em;
 }
 
 @media (prefers-color-scheme: light) {
@@ -80,5 +93,9 @@ button:focus {
 
   .bingo-board-cell {
     border-color: var(--secondary);
+  }
+
+  .number-display {
+    background-color: var(--primary-highlight);
   }
 }

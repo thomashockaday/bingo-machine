@@ -42,7 +42,20 @@ function App() {
         <div className="bingo-controls">
           <h1>Bingo</h1>
 
-          <button onClick={callNextNumber}>Call</button>
+          <h2>Number Selected</h2>
+          <div className="number-display">
+            {calledNumbers[calledNumbers.length - 1] ?? "0"}
+          </div>
+
+          <h2>Total Called</h2>
+          <div className="number-display">{calledNumbers.length}</div>
+
+          <button
+            onClick={callNextNumber}
+            disabled={calledNumbers.length === numbers.length}
+          >
+            Call
+          </button>
           <button onClick={reset}>Reset</button>
         </div>
       </div>
