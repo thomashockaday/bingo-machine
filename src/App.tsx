@@ -19,6 +19,10 @@ function App() {
     }
   }
 
+  function reset(): void {
+    setCalledNumbers([]);
+  }
+
   return (
     <div className="bingo-machine">
       <div className="bingo-board">
@@ -35,6 +39,7 @@ function App() {
       </div>
 
       <button onClick={callNextNumber}>Call</button>
+      <button onClick={reset}>Reset</button>
     </div>
   );
 }
