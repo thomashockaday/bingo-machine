@@ -59,6 +59,10 @@ function App() {
           <button onClick={reset}>Reset</button>
         </div>
       </div>
+
+      <div className="bingo-player">
+        {calledNumbers[calledNumbers.length - 1] ?? "0"}
+      </div>
     </div>
   );
 }

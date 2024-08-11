@@ -63,12 +63,16 @@ button:focus {
 
 .bingo-machine {
   width: 96%;
-  padding: 2%;
+  padding: 0 2%;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 .bingo-caller {
   display: flex;
   gap: 2%;
+  width: 100%;
 }
 
 .bingo-board {
@@ -97,6 +101,19 @@ button:focus {
   text-align: center;
   font-size: 4vmin;
   padding: 5%;
+}
+
+.bingo-player {
+  display: none;
+  font-size: 30vmin;
+  width: 100%;
+  text-align: center;
+}
+
+@media (min-width: 2000px) {
+  .bingo-player {
+    display: block;
+  }
 }
 
 @media (prefers-color-scheme: light) {
