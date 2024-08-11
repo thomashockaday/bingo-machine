@@ -2,6 +2,7 @@
   --primary: #ffffff;
   --secondary: #2f3542;
   --highlight: #ff6b81;
+  --highlight-active: #ff4757;
 
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -17,6 +18,24 @@
 
 body {
   margin: 1em 2%;
+  font-size: 1.2rem;
+}
+
+button {
+  padding: 1em 2%;
+  background-color: var(--highlight);
+  border: none;
+  font-size: inherit;
+}
+
+button:hover,
+button:active,
+button:focus {
+  background-color: var(--highlight-active);
+}
+
+button:focus {
+  border: 2px solid var(--highlight-active);
 }
 
 .bingo-board {
@@ -28,7 +47,6 @@ body {
 
 .bingo-board-cell {
   text-align: center;
-  font-size: 1.2rem;
   padding: 1em 2%;
   border: 1px solid var(--primary);
 }
