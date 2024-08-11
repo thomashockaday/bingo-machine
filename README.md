@@ -1,5 +1,7 @@
 # Bingo Machine
 
+Demo: https://thomashockaday.github.io/bingo-machine/
+
 ## Playing
 
 To start a new game, load up a fresh page or click the "Reset" button.
