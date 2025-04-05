@@ -10,13 +10,10 @@ function App() {
   }
 
   function callNextNumber(): void {
-    const random = Math.floor(Math.random() * 90) + 1;
+    const uncalled = numbers.filter((x) => !calledNumbers.includes(x));
+    const random = Math.floor(Math.random() * uncalled.length);
 
-    if (calledNumbers.includes(random)) {
-      callNextNumber();
-    } else {
-      setCalledNumbers([...calledNumbers, random]);
-    }
+    setCalledNumbers([...calledNumbers, uncalled[random]]);
   }
 
   function reset(): void {
