@@ -3,8 +3,8 @@
   --primary-highlight: #c8d6e5;
   --secondary: #222f3e;
   --secondary-highlight: #1e272e;
-  --tertiary: #ff6b81;
-  --tertiary-highlight: #ff4757;
+  --tertiary: #ff4757;
+  --tertiary-highlight: #ff6b81;
 
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -54,6 +54,7 @@ button {
   width: 100%;
   margin: 5% 0;
   font-weight: bold;
+  border-radius: 3px;
 }
 
 button:hover,
@@ -80,13 +81,15 @@ button:focus {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   width: 80%;
-  border: 1px solid var(--primary);
+  border: 1px solid var(--primary-highlight);
+  border-radius: 3px;
+  font-weight: bold;
 }
 
 .bingo-board-cell {
   text-align: center;
   padding: 20%;
-  border: 1px solid var(--primary);
+  border: 1px solid var(--primary-highlight);
 }
 
 .bingo-board-cell--called {
@@ -157,11 +160,11 @@ button:focus {
   }
 
   .bingo-board {
-    border-color: var(--secondary);
+    border-color: var(--secondary-highlight);
   }
 
   .bingo-board-cell {
-    border-color: var(--secondary);
+    border-color: var(--secondary-highlight);
   }
 
   .number-display {
